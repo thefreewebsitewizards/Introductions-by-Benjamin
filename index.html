@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-
 <html class="light scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Introductions by Benjamin</title>
-<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAAZklEQVRYhe3WMQqAMBBE0f94K4/lrb2WjZVWNiIIwm4W9i0mMzB5q0CS9gA4S6oBS5KqJ34HqQGfA+8dOAz4GfA24DTgY8DPgLcBpwEfA34GvA04DfgY8DPgbcBp4D3w14Bf0g0XjRA7w/us8wAAAABJRU5ErkJggg=="/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
@@ -15,331 +12,290 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#1B4D3E",
-                        "primary-dark": "#143A2F",
-                        "background-light": "#F5F5F5",
-                        "background-dark": "#1C1C1C",
-                        "surface-light": "#FFFFFF",
-                        "surface-dark": "#262626",
-                        "text-primary-light": "#1C1C1C",
-                        "text-secondary-light": "#4B5563",
+                        forest: "#1A3C34",
+                        "forest-dark": "#122b25",
+                        cream: "#F9F9F5",
+                        gold: "#C5A059", // Muted gold/bronze
+                        "gold-dark": "#A38345",
+                        "text-main": "#1A3C34", 
+                        "text-light": "#F9F9F5", 
                     },
                     fontFamily: {
-                        "display": ["Inter", "sans-serif"],
-                        "serif": ["Lora", "serif"],
+                        sans: ["Manrope", "sans-serif"],
+                        serif: ["Playfair Display", "serif"],
                     },
-                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                    backgroundImage: {
+                        'texture-lines': "repeating-linear-gradient(45deg, rgba(197, 160, 89, 0.05) 0px, rgba(197, 160, 89, 0.05) 1px, transparent 1px, transparent 10px)",
+                    }
                 },
             },
         }
     </script>
-<style>
-        /* Custom delicate scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #d1d5db;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #9ca3af;
-        }
-    </style>
+<style>::-webkit-scrollbar {
+    width: 8px
+    }
+::-webkit-scrollbar-track {
+    background: #1A3C34
+    }
+::-webkit-scrollbar-thumb {
+    background: #C5A059;
+    border-radius: 4px
+    }
+.bg-grain {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAMeLhTqrQ526nkBZ88niqfsiAkvIR4ur1wTa5Ym3_23rcK4DI2oHajqugooaQDxuYhQzBL6e2lMe2VfP_F5HIi1pJj8YOaDMGXWekDFYMjC5WI7gqw_Q60alA7DEODvwMqXaJhE8dfTOMCxE9qlxjXdWd4D2uOp6a7T55WzjZM88raxVAZIZvHiBynVGjgc49VTFTOi81jRoY8aGVUYM-ci8vFDhWv0gmkZ_CgXVRIfvcjUgygLowGptewNsNY8uDv9_97tgjIso4)
+    }</style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-text-primary-light dark:text-white antialiased transition-colors duration-200">
-<!-- Navigation -->
-<nav class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-surface-light/90 dark:bg-surface-dark/90 backdrop-blur-md">
-<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
-<a href="#" class="flex items-center gap-2 group">
-<span class="material-symbols-outlined text-primary text-3xl">spa</span>
-<span class="text-xl font-medium tracking-wide text-primary">Introductions <span class="font-light text-primary/70">by Benjamin</span></span>
+<body class="bg-cream font-sans text-forest antialiased selection:bg-gold selection:text-white">
+<nav class="fixed top-0 z-50 w-full border-b border-white/5 bg-forest/90 backdrop-blur-md transition-colors duration-300">
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-24 flex items-center justify-between">
+<a href="#hero" class="flex items-center gap-3 group">
+<span class="material-symbols-outlined text-gold text-3xl group-hover:text-cream transition-colors">spa</span>
+<span class="text-2xl font-serif text-cream tracking-wide">Introductions <span class="text-gold italic group-hover:text-white transition-colors">by Benjamin</span></span>
 </a>
-<div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
-<a class="text-primary hover:text-primary-dark transition-colors" href="#process">Process</a>
-<a class="text-primary hover:text-primary-dark transition-colors" href="#difference">Difference</a>
-<a class="text-primary hover:text-primary-dark transition-colors" href="#about">About</a>
-<a class="px-5 py-2.5 bg-primary hover:bg-primary-dark text-white rounded-lg transition-colors shadow-md shadow-primary/20" href="#pricing">Apply for Interview</a>
+<div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-widest uppercase">
+<a class="text-cream/80 hover:text-gold transition-colors" href="#process">Process</a>
+<a class="text-cream/80 hover:text-gold transition-colors" href="#difference">Difference</a>
+<a class="text-cream/80 hover:text-gold transition-colors" href="#about">About</a>
+<a class="px-6 py-3 bg-gold text-forest font-bold text-xs tracking-widest uppercase rounded-sm hover:bg-white transition-colors" href="#pricing">Apply</a>
 </div>
-<button class="md:hidden p-2 text-primary focus:outline-none" id="mobile-menu-btn" aria-label="Toggle menu">
-<span class="material-symbols-outlined" id="menu-icon">menu</span>
+<button id="mobile-menu-btn" class="md:hidden p-2 text-cream focus:outline-none" aria-label="Toggle menu">
+<span id="menu-icon" class="material-symbols-outlined text-3xl">menu</span>
 </button>
 </div>
-<!-- Mobile Menu Dropdown -->
-<div class="hidden md:hidden absolute top-full left-0 w-full bg-white dark:bg-surface-dark border-b border-gray-200 dark:border-gray-800 shadow-lg" id="mobile-menu">
-<div class="flex flex-col px-6 py-6 space-y-4">
-<a class="text-lg text-gray-600 hover:text-primary-dark dark:text-gray-300 dark:hover:text-primary transition-colors font-medium" href="#process" onclick="toggleMobileMenu()">Process</a>
-<a class="text-lg text-gray-600 hover:text-primary-dark dark:text-gray-300 dark:hover:text-primary transition-colors font-medium" href="#difference" onclick="toggleMobileMenu()">Difference</a>
-<a class="text-lg text-gray-600 hover:text-primary-dark dark:text-gray-300 dark:hover:text-primary transition-colors font-medium" href="#about" onclick="toggleMobileMenu()">About</a>
-<a class="px-5 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors text-center font-medium mt-2" href="#pricing" onclick="toggleMobileMenu()">Apply for Interview</a>
-</div>
+<div id="mobile-menu" class="hidden md:hidden absolute top-24 left-0 w-full bg-forest border-b border-white/10 p-8 flex flex-col gap-6 shadow-2xl transition-all duration-300 border-t border-white/5">
+<a class="mobile-link text-cream/80 hover:text-gold transition-colors text-base font-medium tracking-widest uppercase text-center py-2" href="#process">Process</a>
+<a class="mobile-link text-cream/80 hover:text-gold transition-colors text-base font-medium tracking-widest uppercase text-center py-2" href="#difference">Difference</a>
+<a class="mobile-link text-cream/80 hover:text-gold transition-colors text-base font-medium tracking-widest uppercase text-center py-2" href="#about">About</a>
+<a class="mobile-link w-full text-center px-6 py-4 bg-gold text-forest font-bold text-xs tracking-widest uppercase rounded-sm hover:bg-white transition-colors" href="#pricing">Apply</a>
 </div>
 </nav>
-<!-- Hero Section -->
-<header class="relative overflow-hidden pt-12 pb-24 lg:pt-12 lg:pb-40">
-<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-<div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
-<div class="flex-1 text-left">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary-dark dark:text-primary text-xs font-bold uppercase tracking-widest mb-6 border border-primary/20">
-                        Private Service
-                    </div>
-<h1 class="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-gray-900 dark:text-white leading-[1.15] mb-6">
-                        Curated Connections for the <span class="font-bold text-gray-900 dark:text-white">Discerning</span>
+<header id="hero" class="relative min-h-screen flex items-center justify-center bg-forest overflow-hidden pt-24">
+<div class="absolute inset-0 bg-grain pointer-events-none mix-blend-overlay"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] bg-gold/5 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10 w-full">
+<div class="flex flex-col items-center text-center">
+<h1 class="text-5xl sm:text-7xl lg:text-8xl font-serif text-cream leading-[1.05] mb-10 tracking-tight">
+                Private introductions in <br class="hidden md:block"/> <span class="italic text-gold">Egg Harbor Township.</span>
 </h1>
-<p class="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg font-light leading-relaxed">
-                        A private introduction service serving Egg Harbor Township. Exclusive, vetted, and deeply personalized for individuals who value discretion.
-                    </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<a class="inline-flex items-center justify-center px-8 py-4 bg-primary-dark dark:bg-primary text-white dark:text-gray-900 font-semibold rounded-lg hover:bg-green-800 dark:hover:bg-green-400 transition-colors shadow-lg shadow-green-900/10" href="#pricing">
-                            Request an Interview
-                        </a>
-<a class="inline-flex items-center justify-center px-8 py-4 bg-transparent border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-white/5 transition-colors" href="#difference">
-                            How It Works
-                        </a>
-</div>
-</div>
-<div class="flex-1 w-full max-w-md lg:max-w-full">
-<div class="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl">
-<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
-<img alt="Portrait of a sophisticated man in a suit looking confident" class="w-full h-full object-cover" data-alt="Sophisticated professional man portrait" src="https://placehold.co/800x1000/1B4D3E/FFFFFF?text=Client+Image+(Portrait)"/>
-<div class="absolute bottom-6 left-6 z-20">
-<p class="text-white text-sm font-medium tracking-wider uppercase opacity-80">Founder</p>
-<p class="text-white text-xl font-semibold">Benjamin Sterling</p>
+<p class="text-lg sm:text-xl md:text-2xl text-cream/80 mb-14 max-w-3xl font-light leading-relaxed font-sans">
+                A personal introduction service run by one person.<br class="hidden md:block"/> No apps. No swiping. No algorithms.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<a class="inline-flex items-center justify-center px-10 py-5 border border-gold text-gold font-bold uppercase tracking-[0.15em] text-xs rounded-sm hover:bg-gold hover:text-forest transition-all duration-300" href="#pricing">
+                    Apply for an Interview ($100)
+                </a>
 </div>
 </div>
 </div>
-</div>
-</div>
-<!-- Background Elements -->
-<div class="absolute top-0 right-0 -z-10 w-1/2 h-full bg-gradient-to-l from-gray-100 dark:from-surface-dark to-transparent opacity-50 dark:opacity-20 pointer-events-none"></div>
 </header>
-<!-- The Difference -->
-<section class="py-20 bg-white dark:bg-surface-dark" id="difference">
+<section class="py-24 bg-cream text-forest" id="difference">
 <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-<div class="mb-16 max-w-2xl">
-<h2 class="text-3xl lg:text-4xl font-light text-gray-900 dark:text-white mb-4">The Difference</h2>
-<div class="h-1 w-20 bg-primary-dark dark:bg-primary mb-6"></div>
-<p class="text-gray-600 dark:text-gray-300 text-lg">Why discerning clients choose Introductions by Benjamin over traditional matchmaking apps.</p>
+<div class="grid lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-4">
+<h2 class="text-4xl lg:text-5xl font-serif text-forest mb-6">The Difference</h2>
+<div class="h-1 w-16 bg-gold mb-8"></div>
+<p class="text-forest/70 text-lg leading-relaxed">
+                    Why discerning clients choose Introductions by Benjamin over traditional matchmaking apps. We value quality over quantity.
+                </p>
 </div>
-<div class="grid md:grid-cols-3 gap-8">
-<!-- Feature 1 -->
-<div class="p-8 border border-gray-100 dark:border-gray-800 bg-background-light dark:bg-background-dark rounded-xl hover:shadow-lg transition-shadow duration-300">
-<div class="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-lg flex items-center justify-center text-primary-dark dark:text-primary mb-6">
-<span class="material-symbols-outlined text-2xl">verified_user</span>
+<div class="lg:col-span-8 grid md:grid-cols-2 gap-6">
+<div class="p-8 border border-forest/5 bg-white shadow-sm hover:border-gold/50 transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-gold mb-6">verified_user</span>
+<h3 class="text-xl font-serif text-forest mb-3">Extensively Vetted</h3>
+<p class="text-forest/60 leading-relaxed text-sm">Every candidate undergoes a rigorous background check and personal interview before being added to our private rolodex.</p>
 </div>
-<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Extensively Vetted</h3>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed">Every candidate undergoes a rigorous background check and personal interview before being added to our private rolodex.</p>
+<div class="p-8 border border-forest/5 bg-white shadow-sm hover:border-gold/50 transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-gold mb-6">lock</span>
+<h3 class="text-xl font-serif text-forest mb-3">Strictly Confidential</h3>
+<p class="text-forest/60 leading-relaxed text-sm">Your privacy is paramount. Profiles are never public and are only shared with compatible matches after mutual consent.</p>
 </div>
-<!-- Feature 2 -->
-<div class="p-8 border border-gray-100 dark:border-gray-800 bg-background-light dark:bg-background-dark rounded-xl hover:shadow-lg transition-shadow duration-300">
-<div class="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-lg flex items-center justify-center text-primary-dark dark:text-primary mb-6">
-<span class="material-symbols-outlined text-2xl">lock</span>
+<div class="p-8 border border-forest/5 bg-white shadow-sm hover:border-gold/50 transition-colors duration-300 md:col-span-2">
+<span class="material-symbols-outlined text-4xl text-gold mb-6">diamond</span>
+<h3 class="text-xl font-serif text-forest mb-3">High-Touch Service</h3>
+<p class="text-forest/60 leading-relaxed text-sm">We are not an algorithm. Benjamin personally oversees every introduction, ensuring alignment in values and lifestyle.</p>
 </div>
-<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Strictly Confidential</h3>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed">Your privacy is paramount. Profiles are never public and are only shared with compatible matches after mutual consent.</p>
-</div>
-<!-- Feature 3 -->
-<div class="p-8 border border-gray-100 dark:border-gray-800 bg-background-light dark:bg-background-dark rounded-xl hover:shadow-lg transition-shadow duration-300">
-<div class="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-lg flex items-center justify-center text-primary-dark dark:text-primary mb-6">
-<span class="material-symbols-outlined text-2xl">diamond</span>
-</div>
-<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">High-Touch Service</h3>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed">We are not an algorithm. Benjamin personally oversees every introduction, ensuring alignment in values and lifestyle.</p>
 </div>
 </div>
 </div>
 </section>
-<!-- About Benjamin -->
-<section class="py-20 lg:py-28 bg-gray-50 dark:bg-[#152e1f]" id="about">
-<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
-<div class="flex-1 order-2 lg:order-1 relative">
-<div class="aspect-square w-full max-w-md mx-auto rounded-full overflow-hidden border-4 border-white dark:border-surface-dark shadow-2xl relative z-10">
-<img alt="Close up of a man reviewing documents in a high end office" class="w-full h-full object-cover" data-alt="Benjamin reviewing documents in office" src="https://placehold.co/800x800/1B4D3E/FFFFFF?text=Client+Image+(Square)"/>
+<section class="py-24 bg-forest relative overflow-hidden" id="about">
+<div class="absolute inset-0 bg-texture-lines opacity-10 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="flex-1 order-2 lg:order-1 relative w-full">
+<div class="border-l-2 border-gold pl-8 py-4">
+<p class="text-gold font-bold uppercase tracking-widest text-sm mb-4">A Personal Note</p>
+<p class="text-3xl lg:text-4xl font-serif text-cream italic leading-normal">
+                        "In a world dominated by swiping, the art of genuine connection has been lost. I founded this agency to bring dignity back to dating."
+                     </p>
+<div class="mt-8 flex items-center gap-4">
+<div class="h-px w-12 bg-gold/50"></div>
+<span class="text-cream font-serif text-xl">Benjamin Sterling</span>
 </div>
-<!-- Decorative circle -->
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] border border-primary/20 rounded-full z-0"></div>
+</div>
 </div>
 <div class="flex-1 order-1 lg:order-2">
-<h2 class="text-3xl lg:text-4xl font-light text-gray-900 dark:text-white mb-6">The Architect of Your Introduction</h2>
-<p class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                        "In a world dominated by swiping, the art of genuine connection has been lost. I founded this agency to bring dignity, intention, and strategy back to dating for Egg Harbor Township's most eligible professionals."
-                    </p>
-<p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-                        With over a decade of experience in executive recruiting and private consulting, Benjamin applies the same rigorous standards to your personal life as you do to your career.
-                    </p>
-<div class="flex items-center gap-4">
-<span class="font-handwriting text-2xl text-primary-dark dark:text-primary italic font-serif">Benjamin Sterling</span>
-</div>
+<h2 class="text-4xl lg:text-5xl font-serif text-cream mb-8">The Architect of <br/><span class="text-gold italic">Your Introduction</span></h2>
+<p class="text-lg text-cream/70 mb-6 leading-relaxed font-light">
+                    With over a decade of experience in executive recruiting and private consulting, Benjamin applies the same rigorous standards to your personal life as you do to your career.
+                </p>
+<p class="text-cream/60 mb-8 leading-relaxed font-light">
+                    We understand that your time is your most valuable asset. Our process is designed to respect that, delivering only highly compatible introductions that have potential for a lasting legacy.
+                </p>
+<a class="text-gold border-b border-gold pb-1 hover:text-white hover:border-white transition-colors text-sm uppercase tracking-widest font-bold inline-block" href="#process">Learn about the process</a>
 </div>
 </div>
 </div>
 </section>
-<!-- How It Works (Timeline) -->
-<section class="py-20 bg-white dark:bg-background-dark" id="process">
+<section class="py-24 bg-cream" id="process">
 <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
-<div class="text-center mb-16">
-<h2 class="text-3xl lg:text-4xl font-light text-gray-900 dark:text-white mb-4">The Process</h2>
-<p class="text-gray-500 dark:text-gray-400">A deliberate journey to meaningful connection.</p>
+<div class="text-center mb-20">
+<h2 class="text-4xl lg:text-5xl font-serif text-forest mb-4">The Process</h2>
+<p class="text-forest/60 font-serif italic text-lg">A deliberate journey to meaningful connection.</p>
 </div>
 <div class="relative">
-<!-- Vertical Line -->
-<div class="absolute left-8 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700 md:left-1/2 md:-ml-[0.5px]"></div>
-<!-- Step 1 -->
-<div class="relative flex flex-col md:flex-row gap-8 mb-16 md:justify-between items-start md:items-center group">
+<div class="absolute left-8 top-0 bottom-0 w-px bg-forest/10 md:left-1/2 md:-ml-[0.5px]"></div>
+<div class="relative flex flex-col md:flex-row gap-8 mb-20 md:justify-between items-start md:items-center group">
 <div class="md:w-[45%] md:text-right order-2 md:order-1 pl-20 md:pl-0">
-<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">The Application</h3>
-<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Submit your initial details. We review every profile to ensure a baseline match with our exclusive clientele.</p>
+<h3 class="text-2xl font-serif text-forest mb-2">The Application</h3>
+<p class="text-forest/60 text-sm leading-relaxed">Submit your initial details. We review every profile to ensure a baseline match with our exclusive clientele.</p>
 </div>
-<div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 rounded-full bg-white dark:bg-background-dark border border-gray-200 dark:border-gray-700 flex items-center justify-center z-10 group-hover:border-primary transition-colors duration-300 order-1 md:order-2">
-<span class="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors">edit_document</span>
+<div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 rounded-full bg-cream border-2 border-forest/10 flex items-center justify-center z-10 group-hover:border-gold transition-colors duration-500 order-1 md:order-2">
+<span class="material-symbols-outlined text-forest/50 group-hover:text-gold transition-colors">edit_document</span>
 </div>
 <div class="hidden md:block md:w-[45%] order-3"></div>
 </div>
-<!-- Step 2 -->
-<div class="relative flex flex-col md:flex-row gap-8 mb-16 md:justify-between items-start md:items-center group">
+<div class="relative flex flex-col md:flex-row gap-8 mb-20 md:justify-between items-start md:items-center group">
 <div class="hidden md:block md:w-[45%] order-1"></div>
-<div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 rounded-full bg-white dark:bg-background-dark border border-gray-200 dark:border-gray-700 flex items-center justify-center z-10 group-hover:border-primary transition-colors duration-300 order-1 md:order-2">
-<span class="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors">coffee</span>
+<div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 rounded-full bg-cream border-2 border-forest/10 flex items-center justify-center z-10 group-hover:border-gold transition-colors duration-500 order-1 md:order-2">
+<span class="material-symbols-outlined text-forest/50 group-hover:text-gold transition-colors">coffee</span>
 </div>
 <div class="md:w-[45%] md:text-left order-2 md:order-3 pl-20 md:pl-0">
-<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">The Interview</h3>
-<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">A private, in-depth consultation with Benjamin ($100 fee). We discuss your history, values, and non-negotiables.</p>
+<h3 class="text-2xl font-serif text-forest mb-2">The Interview</h3>
+<p class="text-forest/60 text-sm leading-relaxed">A private, in-depth consultation with Benjamin ($100 fee). We discuss your history, values, and non-negotiables.</p>
 </div>
 </div>
-<!-- Step 3 -->
 <div class="relative flex flex-col md:flex-row gap-8 md:justify-between items-start md:items-center group">
 <div class="md:w-[45%] md:text-right order-2 md:order-1 pl-20 md:pl-0">
-<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Curated Matches</h3>
-<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Receive hand-picked introductions. No algorithms, just thoughtful, human-verified connections.</p>
+<h3 class="text-2xl font-serif text-forest mb-2">Curated Matches</h3>
+<p class="text-forest/60 text-sm leading-relaxed">Receive hand-picked introductions. No algorithms, just thoughtful, human-verified connections.</p>
 </div>
-<div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 rounded-full bg-white dark:bg-background-dark border border-gray-200 dark:border-gray-700 flex items-center justify-center z-10 group-hover:border-primary transition-colors duration-300 order-1 md:order-2">
-<span class="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors">favorite</span>
+<div class="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-16 h-16 rounded-full bg-cream border-2 border-forest/10 flex items-center justify-center z-10 group-hover:border-gold transition-colors duration-500 order-1 md:order-2">
+<span class="material-symbols-outlined text-forest/50 group-hover:text-gold transition-colors">favorite</span>
 </div>
 <div class="hidden md:block md:w-[45%] order-3"></div>
 </div>
 </div>
 </div>
 </section>
-<!-- Application / Pricing Section -->
-<section class="py-20 lg:py-28 bg-gray-50 dark:bg-[#152e1f]" id="pricing">
-<div class="max-w-4xl mx-auto px-6 sm:px-8">
-<div class="grid md:grid-cols-5 gap-0 shadow-2xl rounded-2xl overflow-hidden bg-white dark:bg-surface-dark">
-<!-- Left: Value Prop -->
-<div class="md:col-span-2 bg-gray-900 dark:bg-black p-8 text-white flex flex-col justify-between relative overflow-hidden">
+<section class="py-24 bg-cream border-t border-forest/5" id="pricing">
+<div class="max-w-5xl mx-auto px-6 sm:px-8">
+<div class="grid md:grid-cols-5 gap-0 shadow-2xl overflow-hidden bg-white rounded-sm border border-forest/10">
+<div class="md:col-span-2 bg-forest p-10 text-cream flex flex-col justify-between relative overflow-hidden">
+<div class="absolute inset-0 bg-texture-lines opacity-10"></div>
 <div class="relative z-10">
-<h3 class="text-2xl font-light mb-6">The Initial Interview</h3>
-<p class="text-gray-300 text-sm leading-relaxed mb-6">
-                            This booking secures your 90-minute private consultation with Benjamin. The fee ensures we only work with those serious about finding a partner.
-                        </p>
-<ul class="space-y-4 text-sm text-gray-300">
+<h3 class="text-3xl font-serif italic mb-8 text-gold">The Initial Interview</h3>
+<p class="text-cream/80 text-sm leading-relaxed mb-8 font-light">
+                        This booking secures your 90-minute private consultation with Benjamin. The fee ensures we only work with those serious about finding a partner.
+                    </p>
+<ul class="space-y-4 text-sm text-cream/70">
 <li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
-<span>Deep-dive into your relationship goals</span>
+<span class="material-symbols-outlined text-gold text-lg">check_circle</span>
+<span>Deep-dive into relationship goals</span>
 </li>
 <li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span class="material-symbols-outlined text-gold text-lg">check_circle</span>
 <span>Honest profile assessment</span>
 </li>
 <li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span class="material-symbols-outlined text-gold text-lg">check_circle</span>
 <span>Inclusion in private database</span>
 </li>
 </ul>
 </div>
-<div class="mt-12 relative z-10">
-<p class="text-xs uppercase tracking-widest text-gray-500 mb-1">Consultation Fee</p>
-<p class="text-4xl font-bold text-white">$100</p>
+<div class="mt-12 relative z-10 border-t border-white/10 pt-6">
+<p class="text-xs uppercase tracking-widest text-gold mb-1">Consultation Fee</p>
+<p class="text-5xl font-serif text-white">$100</p>
 </div>
-<!-- Abstract pattern -->
-<div class="absolute -bottom-20 -right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
 </div>
-<!-- Right: Form -->
-<div class="md:col-span-3 p-8 lg:p-10">
+<div class="md:col-span-3 p-10 bg-white">
 <form class="flex flex-col gap-6" onsubmit="event.preventDefault();">
-<h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Secure Your Spot</h4>
-<!-- Personal Info -->
-<div class="space-y-4">
-<div class="grid grid-cols-2 gap-4">
-<div>
-<label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">First Name</label>
-<input class="w-full bg-gray-50 dark:bg-background-dark border-0 border-b-2 border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-0 px-0 py-2 transition-colors text-gray-900 dark:text-white placeholder-gray-400" placeholder=" Jane" type="text"/>
+<div class="flex items-center justify-between mb-2">
+<h4 class="text-xl font-serif text-forest">Secure Your Spot</h4>
+<span class="material-symbols-outlined text-forest/20">lock</span>
 </div>
+<div class="space-y-5">
+<div class="grid grid-cols-2 gap-5">
 <div>
-<label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Last Name</label>
-<input class="w-full bg-gray-50 dark:bg-background-dark border-0 border-b-2 border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-0 px-0 py-2 transition-colors text-gray-900 dark:text-white placeholder-gray-400" placeholder=" Doe" type="text"/>
-</div>
+<label class="block text-[10px] font-bold text-forest/60 uppercase tracking-widest mb-2">First Name</label>
+<input class="w-full bg-cream/50 border border-gray-200 focus:border-gold focus:ring-0 px-3 py-3 transition-colors text-forest placeholder-gray-400 rounded-sm text-sm" placeholder="Jane" type="text"/>
 </div>
 <div>
-<label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Email Address</label>
-<input class="w-full bg-gray-50 dark:bg-background-dark border-0 border-b-2 border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-0 px-0 py-2 transition-colors text-gray-900 dark:text-white placeholder-gray-400" placeholder=" jane@example.com" type="email"/>
+<label class="block text-[10px] font-bold text-forest/60 uppercase tracking-widest mb-2">Last Name</label>
+<input class="w-full bg-cream/50 border border-gray-200 focus:border-gold focus:ring-0 px-3 py-3 transition-colors text-forest placeholder-gray-400 rounded-sm text-sm" placeholder="Doe" type="text"/>
+</div>
 </div>
 <div>
-<label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">LinkedIn Profile</label>
-<input class="w-full bg-gray-50 dark:bg-background-dark border-0 border-b-2 border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-0 px-0 py-2 transition-colors text-gray-900 dark:text-white placeholder-gray-400" placeholder=" https://linkedin.com/in/..." type="url"/>
+<label class="block text-[10px] font-bold text-forest/60 uppercase tracking-widest mb-2">Email Address</label>
+<input class="w-full bg-cream/50 border border-gray-200 focus:border-gold focus:ring-0 px-3 py-3 transition-colors text-forest placeholder-gray-400 rounded-sm text-sm" placeholder="jane@example.com" type="email"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-forest/60 uppercase tracking-widest mb-2">LinkedIn Profile</label>
+<input class="w-full bg-cream/50 border border-gray-200 focus:border-gold focus:ring-0 px-3 py-3 transition-colors text-forest placeholder-gray-400 rounded-sm text-sm" placeholder="https://linkedin.com/in/..." type="url"/>
 </div>
 </div>
-<!-- Payment Mockup -->
-<div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700">
-<label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-4 flex items-center justify-between">
-<span>Payment Details</span>
-<div class="flex gap-2 opacity-60">
-<span class="material-symbols-outlined text-sm">lock</span>
-<span class="text-[10px] leading-4">Secure 256-bit SSL</span>
-</div>
+<div class="mt-2 pt-6 border-t border-gray-100">
+<label class="block text-[10px] font-bold text-forest/60 uppercase tracking-widest mb-3 flex items-center justify-between">
+<span>Card Details</span>
 </label>
-<div class="bg-gray-50 dark:bg-background-dark border border-gray-200 dark:border-gray-600 rounded-lg p-4 relative group focus-within:ring-2 focus-within:ring-primary/50 focus-within:border-primary transition-all">
-<div class="mb-4">
-<label class="text-[10px] text-gray-400 uppercase block mb-1">Card Number</label>
+<div class="bg-white border border-gray-200 rounded-sm p-4 relative group focus-within:border-gold transition-colors shadow-sm">
+<div class="mb-4 border-b border-gray-100 pb-2">
 <div class="flex items-center gap-3">
 <span class="material-symbols-outlined text-gray-400">credit_card</span>
-<input class="w-full bg-transparent border-none focus:ring-0 p-0 text-gray-900 dark:text-white placeholder-gray-400" placeholder="0000 0000 0000 0000" type="text"/>
+<input class="w-full bg-transparent border-none focus:ring-0 p-0 text-forest placeholder-gray-300 font-mono text-sm" placeholder="0000 0000 0000 0000" type="text"/>
 </div>
 </div>
-<div class="grid grid-cols-2 gap-4 border-t border-gray-200 dark:border-gray-700 pt-3">
+<div class="grid grid-cols-2 gap-4">
 <div>
-<label class="text-[10px] text-gray-400 uppercase block mb-1">Expiration</label>
-<input class="w-full bg-transparent border-none focus:ring-0 p-0 text-gray-900 dark:text-white placeholder-gray-400" placeholder="MM / YY" type="text"/>
+<input class="w-full bg-transparent border-none focus:ring-0 p-0 text-forest placeholder-gray-300 font-mono text-sm" placeholder="MM / YY" type="text"/>
 </div>
 <div>
-<label class="text-[10px] text-gray-400 uppercase block mb-1">CVC</label>
-<input class="w-full bg-transparent border-none focus:ring-0 p-0 text-gray-900 dark:text-white placeholder-gray-400" placeholder="123" type="text"/>
+<input class="w-full bg-transparent border-none focus:ring-0 p-0 text-forest placeholder-gray-300 font-mono text-sm text-right" placeholder="CVC" type="text"/>
 </div>
 </div>
 </div>
 </div>
-<button class="mt-4 w-full py-4 bg-primary-dark dark:bg-primary text-white dark:text-gray-900 font-bold rounded-lg hover:bg-green-800 dark:hover:bg-green-400 transition-colors shadow-lg flex items-center justify-center gap-2" type="submit">
-<span>Submit & Pay $100</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
+<button class="mt-2 w-full py-4 bg-forest text-gold font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-forest-dark transition-colors flex items-center justify-center gap-2" type="submit">
+<span>Pay $100 &amp; Apply</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
 </button>
-<p class="text-center text-xs text-gray-400 mt-2">
-                            By proceeding, you agree to our Terms of Service. Charges will appear as "BENJAMIN INTRO".
-                        </p>
+<div class="flex items-center justify-center gap-2 mt-2">
+<span class="material-symbols-outlined text-green-600 text-sm">lock</span>
+<p class="text-center text-[10px] text-gray-400 uppercase tracking-wide">Secure SSL Encrypted Payment</p>
+</div>
 </form>
 </div>
 </div>
 </div>
 </section>
-<!-- Footer -->
-<footer class="bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 py-12">
+<footer class="bg-forest border-t border-white/10 py-16">
 <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary-dark dark:text-primary">spa</span>
-<span class="text-lg font-semibold text-gray-900 dark:text-white">Introductions by Benjamin</span>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gold text-3xl">spa</span>
+<span class="text-xl font-serif text-cream">Introductions <span class="text-gold italic">by Benjamin</span></span>
 </div>
-<div class="text-sm text-gray-500 dark:text-gray-400">
-                © 2026 Introductions by Benjamin. All rights reserved.
-            </div>
-<div class="flex gap-6">
-<a class="text-gray-400 hover:text-primary transition-colors text-sm" href="#">Privacy</a>
-<a class="text-gray-400 hover:text-primary transition-colors text-sm" href="#">Terms</a>
-<a class="text-gray-400 hover:text-primary transition-colors text-sm" href="#">Contact</a>
+<div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-cream/50">
+<a class="hover:text-gold transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-gold transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-gold transition-colors" href="#">Contact Support</a>
+</div>
+<div class="text-xs text-cream/30 text-center md:text-right">
+<p>© 2024 Introductions by Benjamin.</p>
+<a href="http://thefreewebsitewizards.com/" target="_blank" class="block mt-2 hover:text-gold transition-colors">Made by: The Free Websites Wizards</a>
 </div>
 </div>
 </footer>
+
 <script>
     function toggleMobileMenu() {
         const menu = document.getElementById('mobile-menu');
@@ -351,7 +307,11 @@
             icon.textContent = 'close';
         }
     }
-    
+
     document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', toggleMobileMenu);
+    });
 </script>
 </body></html>
